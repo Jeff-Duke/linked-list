@@ -1,6 +1,37 @@
+// $(document).ready(function(){
+// // var urlInput = $('#url-input');
+// // var titleInput = $('#title-input');
+// //
+
+function titleError() {
+  $('.title-error').text('Please enter a title');
+
+}
+
+function urlError() {
+  $('.url-error').text('Please enter a valid url');
+
+}
+
 function modLinkEvent() {
- var titleInput = $('#title-input').val();
- var urlInput = $('#url-input').val();
+  var titleInput = $('#title-input').val();
+  var urlInput = $('#url-input').val();
+    if ((titleInput == '') && (urlInput == '')) {
+      titleError();
+      urlError();
+    return;
+    }
+
+    if (titleInput == '') {
+      titleError();
+      return;
+    }
+
+    if (urlInput == '') {
+      urlError();
+      return;
+    }
+
   $('.link-list').prepend('<article class=\"mod-link"\><a href='+urlInput+'>' + titleInput + '</a><div class=\"button-container"\><input type=\"button"\ class=\"read-button"\ value=\"Read"\><input type=\"button"\ class=\"remove-button"\ value=\"Remove"\></div></article>');
  }
 
@@ -15,3 +46,4 @@ $('.link-list').on('click','.read-button', function(){
 $('.link-list').on('click', '.remove-button', function(){
   $(this).closest('article').remove();
 });
+// });
