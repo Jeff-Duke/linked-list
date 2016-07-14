@@ -1,7 +1,6 @@
 html {
   margin:0;
   font-family: 'Work Sans', sans-serif;
-  text-decoration: none;
 }
 
 .input-container-all {
@@ -11,17 +10,21 @@ html {
   height: 200px;
   z-index: 10;
   min-width: 500px;
-  background-color: white;
 }
 
 .counter-container {
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid black;
   flex: 1;
   display: flex;
-  border-radius: 10px;
-  border: 10px solid #465F7D;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.counter-container:hover {
+  border: 2px solid aqua;
 }
 
 #clear-all-read {
@@ -33,14 +36,24 @@ html {
 
 .input-container {
   flex: 2;
-  border: 10px solid #465F7D;
-  border-radius: 10px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
+.input-container:hover {
+  border-bottom: 2px solid aqua;
+}
+
+.input-container h1 {
+  size: 40px;
+  color: black;
+}
 .input-fields {
+  color: black;
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -60,25 +73,49 @@ html {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: left | space-around;
+  background-image: '../images/green-arm-chair.jpg;'
 }
 
 .link-list {
   margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .mod-link{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin: 20px;
   width: 200px;
-  height: 200px;
-  background-color: black;
+  height: 125px;
+  background-color: dimgrey;
   border-radius: 10px;
-  text-decoration: none;
+  border: 2px solid aqua;
+}
+.button-container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.mod-link a: hover {
+.mod-link:hover {
+  background: grey;
+}
+
+.mod-link a {
+  font-size: 1em;
+  color: white;
+  margin: auto;
+}
+
+.mod-link a:hover {
   transition-property: color;
   transition-duration: .3s;
   color: aqua;
@@ -86,7 +123,8 @@ html {
 }
 
 .read {
-  opacity: .2;
+  opacity: .6;
+  background: grey;
 }
 
 .button-container {
