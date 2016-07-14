@@ -51,7 +51,7 @@ function validateUrl(urlInput) {
 }
 
 function httpPrepend(urlInput) {
-  if(/^(http|https|ftp):\/\//i.test(urlInput) {
+  if(/^(http|https|ftp):\/\//i.test(urlInput)) {
     return urlInput;
   }
   return 'http://' + urlInput;
