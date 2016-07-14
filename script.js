@@ -46,10 +46,23 @@ function removeRead() {
   $('.read').remove().closest('article');
 }
 
+function validateUrl(urlInput) {
+   return (/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test(urlInput));
+}
+
+function httpPrepend(urlInput) {
+  if(/^(http|https|ftp):\/\//i.test(urlInput) {
+    return urlInput;
+  }
+  return 'http://' + urlInput;
+}
+
 function modLinkEvent() {
   clearErrors();
   var titleInput = $('#title-input').val();
   var urlInput = $('#url-input').val();
+  urlInput = httpPrepend(urlInput);
+  console.log(urlInput)
 
   if ((titleInput == '') && (urlInput == '')) {
     titleError();
@@ -62,10 +75,11 @@ function modLinkEvent() {
     return;
   }
 
-  if (urlInput == '') {
+  if (!validateUrl(urlInput)) {
     urlError();
     return;
   }
+
 
   $('.link-list').prepend('<article class=\"mod-link"\>' +
                             '<a href='+urlInput+'>' + titleInput + '</a>' +
