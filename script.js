@@ -57,7 +57,6 @@ function modLinkEvent() {
   var titleInput = $('#title-input').val();
   var urlInput = $('#url-input').val();
   urlInput = httpPrepend(urlInput);
-  console.log(urlInput)
 
   if ((titleInput == '') && (urlInput == '')) {
     titleError();

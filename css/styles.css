@@ -1,23 +1,23 @@
 html {
-  margin:0;
   font-family: 'Work Sans', sans-serif;
+  margin:0;
 }
 
 .input-container-all {
-  position: fixed;
   display: flex;
-  width: 100%;
+  position: fixed;
   height: 200px;
-  z-index: 10;
   min-width: 500px;
+  width: 100%;
+  z-index: 10;
 }
 
 .counter-container {
-  color: black;
   background-color: white;
   border-bottom: 1px solid black;
-  flex: 1;
+  color: black;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -28,18 +28,18 @@ html {
 }
 
 #clear-all-read {
+  right: 25px;
   position: fixed;
   top: 165px;
-  right: 25px;
   z-index: 15;
 }
 
 .input-container {
-  flex: 2;
   background-color: white;
   border-bottom: 1px solid grey;
   border-right: 1px solid grey;
   display:flex;
+  flex: 2;
   justify-content: center;
   align-items: center;
 }
@@ -49,8 +49,8 @@ html {
 }
 
 .input-container h1 {
-  size: 40px;
   color: black;
+  size: 40px;
 }
 .input-fields {
   color: black;
@@ -68,40 +68,39 @@ html {
 }
 
 .link-container {
-  width: 100%;
   bottom: 0;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: left | space-around;
-  background-image: '../images/green-arm-chair.jpg;'
+  height: 100%;
+  width: 100%;
 }
 
 .link-list {
-  margin-top: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 200px;
 
 }
 
 .mod-link{
+  background-color: dimgrey;
+  border: 2px solid aqua;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  height: 125px;
   margin: 20px;
   width: 200px;
-  height: 125px;
-  background-color: dimgrey;
-  border-radius: 10px;
-  border: 2px solid aqua;
 }
 .button-container {
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 15px;
 }
 
@@ -110,21 +109,21 @@ html {
 }
 
 .mod-link a {
-  font-size: 1em;
   color: white;
+  font-size: 1em;
   margin: auto;
 }
 
 .mod-link a:hover {
-  transition-property: color;
-  transition-duration: .3s;
   color: aqua;
   display: flex;
+  transition-property: color;
+  transition-duration: .3s;
 }
 
 .read {
-  opacity: .6;
   background: grey;
+  opacity: .6;
 }
 
 .button-container {
@@ -134,8 +133,8 @@ html {
 }
 
 .mod-link.button-container a {
-  font-size: 3em;
   color: white;
+  font-size: 3em;
 }
 
 @media (max-width: 575px) {
