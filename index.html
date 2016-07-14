@@ -5,33 +5,56 @@
     <meta charset="utf-8">
     <title>Mod Links</title>
     <link rel="stylesheet" href="css/reset.css" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" charset="utf-8">
 </head>
-<header>
-  <h1>Mod Links</h1>
-  <div class="input-container-all">
-    <div class="input-container" <input type="text" class="title" id="title-input" value="" placeholder="Title" />
-      <p class="title-error"> </p>
-      <input type="text" class="url" id="url-input" value="" placeholder="URL" />
-      <p class="url-error"> </p>
-    </div>
-    <div class="buttons">
-      <input type="button" id="submit-button" value="Submit" disabled/>
-    </div>
-  </div>
-</header>
+
+    <header>
+
+      <div class="input-container-all">
+
+            <div class="input-container">
+              <h1>Mod Links</h1>
+
+                <div class="input-fields">
+
+                  <input type="button" id="clear-all-read" value="Clear Read Bookmarks" disabled/>
+                  <input type="text" class="title" id="title-input" value="google" placeholder="Title" />
+                  <p class="title-error"> </p>
+                  <input type="text" class="url" id="url-input" value="goole.com" placeholder="URL" />
+                  <p class="url-error"> </p>
+                  <input type="button" id="submit-button" value="Submit" disabled/>
+
+              </div>
+                <!-- <div class="button-container-inputs">
+                </div> -->
+
+          </div>
+
+          <div class="counter-container">
+            <p class="read-counter"> </p>
+            <p class="total-links-counter"> </p>
+          </div>
+
+      </div>
+
+    </header>
 
 <body>
-  <div id="counter-container">
-    <p class="read-counter"> </p>
-    <p class="total-links-counter"> </p>
-  </div>
   <div class=link-container>
     <section class="link-list">
-      <input type="button" id="clear-all-read" value="Clear Read Bookmarks" disabled/>
     </section>
   </div>
-    <script src="jquery.js" charset="utf-8"></script>
-    <script src="script.js" charset="utf-8"></script>
+<script src="jquery.js" charset="utf-8"></script>
+<script src="script.js" charset="utf-8"></script>
 </body>
 </html>
+
+
+<!-- <article class=\"mod-link"\>' +
+                          '<a href='+urlInput+'>' + titleInput + '</a>' +
+                          '<div class=\"button-container"\>' +
+                            '<input type=\"button"\ class=\"read-button"\ value=\"Read"\>' +
+                            '<input type=\"button"\ class=\"remove-button"\ value=\"Remove"\>' +
+                          '</div>' +
+                        '</article>'); -->
