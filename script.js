@@ -91,6 +91,12 @@ $('#submit-button').on('click', function() {
   modLinkEvent();
 });
 
+$('#url-input').keypress(function(e) {
+    if(e.which == 13) {
+        modLinkEvent();
+    }
+});
+
 $('.link-list').on('click','.read-button', function() {
   $(this).closest('.mod-link').toggleClass('read');
   countRead();
