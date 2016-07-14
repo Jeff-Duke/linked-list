@@ -1,23 +1,116 @@
 html {
   margin:0;
-  font-family:
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+/*HEADER*/
+
+/*header {
+  background-color: white;
+  height: 300px;
+}*/
+
+.input-container-all {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  z-index: 10;
+  min-width: 500px;
+  background-color: white;
 }
 
-header {
-  height: 414px;
-  width: 736px;
-  margin: auto;
-}
-.mod-link {
-  background: magenta;
+.counter-container {
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
+  border: 10px solid #465F7D;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#clear-all-read {
+  position: fixed;
+  top: 165px;
+  right: 25px;
+  z-index: 15;
+}
+
+.input-container {
+  flex: 2;
+  border: 10px solid #465F7D;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-fields {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.button-container-inputs {
+  background-color: green;
+  height: 50px;
+  width: 150px;
+}
+/*FORMAT LINKS*/
+.link-container {
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: left | space-around;
+}
 .link-list {
-  background: green;
+  margin-top: 200px;
 }
 
-.url-value {
-  width:100px;
-  height:100px;
-  background:yellow;
+.mod-link{
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.mod-link a: hover {
+  transition-property: color;
+  transition-duration: .3s;
+  color: aqua;
+  display: flex;
+}
+
+.read {
+  opacity: .2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50%;
+}
+.mod-link.button-container a {
+  font-size: 3em;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  .input-container-all {
+    display: block;
+    z-index: 10;
+  }
+  .counter-container {
+    min-height: 50px;
+  }
+}
+
 }
