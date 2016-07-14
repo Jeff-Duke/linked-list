@@ -1,8 +1,3 @@
-// $(document).ready(function(){
-// var urlInput = $('#url-input');
-// var titleInput = $('#title-input');
-// //
-
 function titleError() {
   $('.title-error').text('Please enter a title');
 }
@@ -139,4 +134,3 @@ $('.link-list').bind('DOMSubtreeModified', function() {
 $('#clear-all-read').on('click', function() {
   removeRead();
 })
-// });
